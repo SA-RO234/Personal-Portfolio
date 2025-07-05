@@ -12,7 +12,9 @@
   /* font family */
   --font-style: "JetBrains Mono", serif;
 }
+
 * {
+  @apply select-none;
   box-sizing: border-box;
   font-family: var(--font-style);
 }
