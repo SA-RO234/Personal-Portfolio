@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Chenla&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Siemreap&display=swap");
+:root {
+  --color-red: #fb8569;
+  --color-greenDark: #002b31;
+  --color-greenLight: #001d21;
+  --color-primary: #9b99ff;
+  --color-green: #f4fcc0;
+  /* font family */
+  --font-style: "JetBrains Mono", serif;
+}
+* {
+  box-sizing: border-box;
+  font-family: var(--font-style);
+}
+
+body {
+  position: relative;
+  background-color: #fff;
+  background-image: radial-gradient(#fb8569 0.5px, #001d21 1.5px);
+  background-size: 20px 20px;
+}
+
+/* Navbar */
+.navbar {
+  width: 90%;
+}
+.navbar ul {
+  padding: 5px 0 5px 0px;
+}
+.navbar ul li::before {
+  content: "[";
+  letter-spacing: 5px;
+  visibility: hidden;
+  display: inline-block;
+}
+.navbar ul li::after {
+  content: "]";
+  visibility: hidden;
+  padding-left: 5px;
+  letter-spacing: 5px;
+  display: inline-block;
+}
+
+.navbar ul li:hover::before,
+.navbar ul li:hover::after {
+  visibility: visible;
+}
