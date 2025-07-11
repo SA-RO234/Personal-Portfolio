@@ -1,17 +1,16 @@
-import React from "react";
-import logo from "../assets/logo.png";
+import React, { useState } from "react";
 import "../index.scss";
+import Lottie from "lottie-react";
+import Menu from "../assets/Menu.json";
+import Close from "../assets/close.png";
+import "./Navbar.scss";
+import clsx from "clsx";
+
 const Navbar = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
-    <div className="relative flex justify-center items-center shadow-md opacity-100 w-[90%] h-[80px] bg-[#001D21] m-auto border-2 border-[#fb8569] rounded-[30px]">
-      {/* <a href="">
-        <img
-          className=" h-[70px] w-[75px] object-cover  rounded-[30%]"
-          src={logo}
-          alt=""
-        />
-      </a> */}
-      <nav className="navbar" >
+    <div className="relative flex justify-between md:justify-center items-center shadow-md opacity-100 w-[90%] h-[80px] bg-[#001D21] m-auto border md:border-2 border-[#fb8569] md:rounded-[30px]">
+      <nav className="navbar md:block hidden">
         <ul className="flex justify-around items-center text-[#fb8569]">
           <li>
             <a href="#home">Home</a>
@@ -39,6 +38,62 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
+      <nav
+        className={clsx("navbar navbar-Mobile bg-black py-10 h-full fixed left-0 top-0 z-10 md:hidden",
+          isOpen ? "translate-x-0 duration-300" : "translate-x-[-100%] duration-500")}>
+        <button
+          className="float-end pr-7 font-bold"
+          onClick={() => setOpen(false)}
+        >
+          <img src={Close} alt="" />
+        </button>
+        <ul className="flex flex-col gap-5 w-full justify-around items-center text-[#fb8569]">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#aboutme">About Me</a>
+          </li>
+          <li>
+            <a href="#education">Education</a>
+          </li>
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#project">Project</a>
+          </li>
+          <li>
+            <a href="#blog">Blog</a>
+          </li>
+          <li>
+            <a href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <a
+        className="md:hidden flex justify-center group items-center pl-5"
+        href="#home"
+      >
+        <img
+          className="h-[55px] group-hover:rotate-[360deg] duration-300 w-[55px] object-cover rounded-full"
+          src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1751728163/photo_2025-07-05_22-01-11_idkhfe.jpg"
+          alt="Logo"
+        />
+      </a>
+      <button
+        type="button"
+        className="md:hidden w-[100px] h-[100px] items-center ml-[100px] flex justify-center"
+        onClick={() => setOpen(true)}
+      >
+        <Lottie
+          className="w-[200px] absolute right-[-50px] h-[200px]"
+          animationData={Menu}
+        />
+      </button>
     </div>
   );
 };

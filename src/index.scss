@@ -11,12 +11,15 @@
   --color-green: #f4fcc0;
   /* font family */
   --font-style: "JetBrains Mono", serif;
+  --font-poppins: "Poppins", sans-serif;
 }
 
 * {
+  @apply text-main;
   @apply select-none;
+  // border: 1px solid green;
   box-sizing: border-box;
-  font-family: var(--font-style);
+  font-family: var(--font-poppins);
 }
 
 body {

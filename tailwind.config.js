@@ -6,6 +6,8 @@ export default {
       fontFamily: {
         boldonse: ["Boldonse", "system-ui"],
         dm: ["DM Sans", "sans-serif"],
+        outfit: ["Outfit", "sans-serif"],
+        popins: ["Poppins", "sans-serif"],
       },
       colors: {
         main: "#fb8569",
