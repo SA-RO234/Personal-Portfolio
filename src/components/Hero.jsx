@@ -3,34 +3,30 @@ import { BsFacebook } from "react-icons/bs";
 import { FaTelegram } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Button from "./button/Button";
-import Typed from "typed.js";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
-  useEffect(() => {
-    const typed = new Typed(".element", {
-      strings: ["un Rosa"],
-      typeSpeed: 150,
-      backSpeed: 50,
-      backDelay: 1000,
-      loop: true,
-      showCursor: false,
-    });
-    return () => {
-      typed.destroy();
-    };
-  }, []);
-
   return (
-    <div className="md:mt-10 p-[20px] md:px-[50px] md:py-0 grid items-center grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-1 opacity-100 w-[90%] bg-[#001D21]  m-auto border-[#fb8569] border md:border-2 md:rounded-[30px]">
-      <div className="w-[100%] gap-4  flex  items-start justify-start flex-wrap">
-        <h1 className="relative w-full text-main flex-col  flex text-start md:text-center leading-[85px] sm:leading-[120px] sm:text-[6.5em] text-[4em]  md:text-[7em] font-bold">
+    <div
+      id="home"
+      className="md:mt-[100px] mt-[105px] p-[20px] md:px-[50px] md:py-0 grid items-center grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-1 opacity-100 w-[90%] bg-[#001D21]  m-auto border-[#fb8569] border md:border-2 md:rounded-[30px]"
+    >
+      <div className="w-[100%] gap-4  flex flex-col items-start justify-start flex-wrap">
+        <h1 className="relative w-full text-main flex-col  flex text-start  leading-[85px] sm:leading-[120px] sm:text-[6.5em] text-[4em]  md:text-[7em] font-bold">
           Hello, I'm
           <span className="absolute  md:right-[-10px] right-[0px] top-[-5px] md:top-0 text-xl flex">
             [Active{" "}
             <span className="bg-green-700 block w-[10px] rounded-full h-[10px]"></span>
             ]
-          </span><span>S<span className="element"></span> </span>
+          </span>
         </h1>
+        <TypeAnimation
+          className="text-[6rem] font-bold"
+          sequence={["Sun Rosa", 1000]}
+          speed={10}
+          repeat={Infinity}
+          cursor={false}
+        />
         <ul className="flex gap-5 border-t border-main pt-5">
           <li>
             <a className="text-5xl" href="#">

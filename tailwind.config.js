@@ -11,6 +11,10 @@ export default {
       },
       colors: {
         main: "#fb8569",
+        greenMain: "#001d21",
+        dark: "#0D0D0E",
+        darkLight: "#F2EFEA",
+        pink: "#E32C48",
       },
     },
   },

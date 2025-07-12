@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Title from "../components/Title";
 
 const Contact = () => {
   return (
-    <div>
-      
+    <div id="Contact">
+      <Title title={"Contact"} />
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

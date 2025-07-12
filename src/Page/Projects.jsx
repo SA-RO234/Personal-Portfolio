@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Title from "../components/Title";
 
 function Projects() {
   return (
-    <div>
-      
+    <div id="project">
+      <Title title={"My Project"} />
     </div>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

@@ -1,17 +1,12 @@
-import React from 'react'
+import React from "react";
+import Title from "../components/Title";
 
 const Blog = () => {
   return (
-    <div>
-      <h2>My Blog</h2>
-      <ul>
-        <li>Understanding React Hooks</li>
-        <li>A Guide to Node.js</li>
-        <li>CSS Grid vs Flexbox</li>
-        <li>JavaScript ES6 Features</li>
-      </ul>
+    <div id="blog">
+      <Title title={"My Blog"} />
     </div>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;
