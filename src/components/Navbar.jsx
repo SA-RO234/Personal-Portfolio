@@ -36,6 +36,9 @@ const Navbar = () => {
               <a href="#blog">Blog</a>
             </li>
             <li>
+              <a href="#Testimonials">Testimonials</a>
+            </li>
+            <li>
               <a href="#Contact">Contact</a>
             </li>
           </ul>
@@ -75,6 +78,9 @@ const Navbar = () => {
             </li>
             <li>
               <a href="#blog">Blog</a>
+            </li>
+            <li>
+              <a href="#Testimonials">Testimonials</a>
             </li>
             <li>
               <a href="#Contact">Contact</a>
