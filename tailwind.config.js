@@ -15,6 +15,8 @@ export default {
         dark: "#0D0D0E",
         darkLight: "#F2EFEA",
         pink: "#E32C48",
+        primary: "#9b99ff",
+        yellow: "#f4fcc0",
       },
     },
   },

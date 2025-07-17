@@ -124,14 +124,14 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="skills mt-20  bg-greenMain   w-full  p-[0px_70px_70px_70px]"
+      className="skills mt-20  bg-greenMain  md:p-0 w-full md:pb-[70px] p-[30px]"
     >
-      
       <Title className="text-pink" title={"My Skills"} />
-      <div className="flex skill-containers w-full flex-wrap justify-between gap-20">
-        <SkillsBlock title={"Front-End Developement"} Skill={fontendSkills} />
-        {/* <div className="line w-[5px] h-auto bg-pink"></div> */}
-        <div className="block-right gap-3 flex justify-between flex-col">
+      <div className="flex skill-containers  md:gap-20 md:p-[70px] w-full flex-wrap justify-center ">
+        <div className="block-left w-full  md:w-[45%] gap-10 md:gap-0 pb-5 md:p-0 flex justify-between flex-col">
+          <SkillsBlock title={"Front-End Developement"} Skill={fontendSkills} />
+        </div>
+        <div className="block-right  w-full md:w-[45%]  gap-10 md:gap-0  flex justify-between flex-col">
           <SkillsBlock title={"Back-End Developement"} Skill={backendSkills} />
           <SkillsBlock title={"Database Management"} Skill={database} />
           <SkillsBlock title={"UX/UI & Design"} Skill={design} />

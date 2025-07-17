@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <div className="bg-greenMain w-full z-10 fixed top-0 pb-5 md:pb-10">
+    <div className="bg-greenMain w-full z-[1000] fixed top-0 pb-5 md:pb-10">
       <div className=" mt-5 top-0 left-[67px]  flex justify-between md:justify-center items-center shadow-md opacity-100 w-[90%] h-[80px] bg-[#001D21] m-auto border md:border-2 border-[#fb8569] md:rounded-[30px]">
         <nav className="navbar md:block hidden">
           <ul className="flex justify-around items-center text-[#fb8569]">

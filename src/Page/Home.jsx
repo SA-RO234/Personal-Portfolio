@@ -10,7 +10,7 @@ import Footer from "./Footer";
 import { useEffect } from "react";
 import Education from "./Education";
 import Experience from "./Experience";
-
+import Testimonials from "./Testimonials";
 const Home = () => {
   return (
     <div className=" overflow-hidden">
@@ -21,15 +21,16 @@ const Home = () => {
         <About />
         <Education />
       </div>
-      <div className="SecondPage py-10 m-0 bg-dark text-pink">
+      <div className="SecondPage  m-0  text-pink">
         <Experience />
         <Skills />
       </div>
 
-      <div className="ThirtPage py-10 m-0 bg-darkLight text-white">
+      <div className="ThirtPage pb-10 m-0 bg-greenMain text-yellow ">
         <Projects />
+        <Testimonials />
       </div>
-      <div className="FourthPage">
+      <div className="FourthPage w-full pt-20 h-auto text-primary">
         <Contact />
         <Footer />
       </div>

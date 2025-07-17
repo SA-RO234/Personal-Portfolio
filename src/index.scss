@@ -72,6 +72,13 @@
 .ThirtPage {
   position: relative;
   background-color: #fff;
-  background-image: radial-gradient(#000000 0.5px, #001d21 1.5px);
+  background-image: radial-gradient(var(--color-green) 0.5px, #001d21 1.5px);
+  background-size: 20px 20px;
+}
+
+.FourthPage {
+  position: relative;
+  background-color: #fff;
+  background-image: radial-gradient(var(--color-primary) 0.5px, #001d21 1.5px);
   background-size: 20px 20px;
 }
