@@ -1,7 +1,6 @@
 import React from "react";
 import Title from "../components/Title";
 import FormContact from "../components/Contact/formContact";
-
 const Contact = () => {
   return (
     <div
@@ -24,7 +23,7 @@ const Contact = () => {
               className="w-6 h-6"
               src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1752729274/10db88e3-5697-420e-92b2-c32cb997bcf8.png"
               alt=""
-            />{" "}
+            />
             Instagram
           </div>
           <div className="flex items-center gap-1 border-2 px-3 border-primary text-primary rounded-full">
