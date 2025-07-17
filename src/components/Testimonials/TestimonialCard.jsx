@@ -3,7 +3,7 @@ import { IoMdStar } from "react-icons/io";
 
 const TestimonialCard = () => {
   return (
-    <div className="border p-10 w-[350px] bg-greenMain relative">
+    <div className="border p-10  w-[350px] bg-greenMain relative">
       <div className="absolute top-[-50px] left-5 bg-yellow text-black px-5 py-2">
         <h1 className="text-xl font-bold">Sun Rosa</h1>
         <p>Software Engineer</p>

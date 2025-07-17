@@ -11,8 +11,8 @@ const Hero = () => {
       id="home"
       className="md:mt-[100px] mt-[105px] p-[20px] md:px-[50px] md:py-0 grid items-center grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-1 opacity-100 w-[90%] bg-[#001D21]  m-auto border-[#fb8569] border md:border-2 md:rounded-[30px]"
     >
-      <div className="w-[100%] gap-4  flex flex-col items-start justify-start flex-wrap">
-        <h1 className="relative w-full text-main flex-col  flex text-start  leading-[50px] sm:leading-[120px] sm:text-[6.5em] text-[4em]  md:text-[7em] font-bold">
+      <div className="w-[100%] sm:gap-4  flex flex-col items-start justify-start flex-wrap">
+        <h1 className="relative w-full text-main flex-col  flex text-start  leading-[70px]  sm:leading-[120px] sm:text-[6.5em] text-[3em]  md:text-[7em] font-bold">
           Hello, I'm
           <span className="absolute  md:right-[-10px] right-[0px] top-[-5px] md:top-0 text-xl flex">
             [Active{" "}
@@ -21,7 +21,7 @@ const Hero = () => {
           </span>
         </h1>
         <TypeAnimation
-          className="sm:text-[6.5em] text-[4em]  md:text-[7em] font-bold"
+          className="sm:text-[6.5em] text-[3em]  md:text-[7em] font-bold"
           sequence={["Sun Rosa", 1000]}
           speed={10}
           repeat={Infinity}
@@ -44,7 +44,7 @@ const Hero = () => {
             </a>
           </li>
         </ul>
-        <div className="flex flex-wrap items-center  md:gap-10">
+        <div className="flex flex-wrap items-center pt-5 sm:p-0 md:gap-10">
           <Button
             className="after:border-2 text-[30px] after:border-main before:border-2 before:border-main"
             title={"Hire Me"}

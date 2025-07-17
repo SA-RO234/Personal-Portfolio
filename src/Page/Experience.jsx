@@ -5,10 +5,10 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className=" w-full h-auto p-[0px_30px_0px_30px] md:p-[0px_70px_50px_70px]"
+      className=" w-full h-auto p-[0px_10px_0px_10px] sm:p-[0px_30px_0px_30px] md:p-[0px_70px_50px_70px]"
     >
       <Title title={"My Experience"} />
-      <div className="w-full pt-10">
+      <div className="w-full sm:pt-10">
         <div className="border-b-2 py-5 items-start flex  w-full justify-between border-pink">
           <div className="flex gap-2 flex-col  w-[70%]">
             <h1 className="md:text-2xl font-bold">Instructor at ETEC Center</h1>

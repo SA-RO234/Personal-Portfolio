@@ -12,7 +12,7 @@ const AboutMe = () => {
   return (
     <div
       id="aboutme"
-      className="about-me  bg-greenMain  w-full  mt-[100px] p-[0px_40px_50px_40px] md:p-[0px_67px_100px_67px] "
+      className="about-me  bg-greenMain  w-full  sm:mt-[100px] p-[0px_10px_50px_10px] sm:p-[0px_40px_50px_40px] md:p-[0px_67px_100px_67px] "
     >
       <Title title="About Me" />
       <p className="text-center pb-10 text-md text-main">Who I Am</p>
