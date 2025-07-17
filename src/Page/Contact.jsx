@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "../components/Title";
 import FormContact from "../components/Contact/formContact";
+
 const Contact = () => {
   return (
     <div
