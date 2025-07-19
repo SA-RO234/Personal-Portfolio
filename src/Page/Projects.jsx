@@ -3,15 +3,45 @@ import Title from "../components/Title";
 import CardComponent from "../components/projects/CardComponent";
 import Button from "../components/button/Button";
 import { BsGithub } from "react-icons/bs";
+
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
 function Projects() {
   return (
-    <div id="project" className="project flex flex-col pb-10 justify-center items-center gap-10 w-full h-auto">
+    <div
+      id="project"
+      className="project flex flex-col justify-center items-center gap-5 w-[90%] mx-auto h-auto"
+    >
       <Title title={"My Project"} />
-      <div className="Project-container md:pt-10 gap-10 flex justify-center items-center flex-wrap">
-        <CardComponent />
-        <CardComponent />
-        <CardComponent />
-      </div>
+      <Swiper
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        className="w-full mt-10 flex gap-0"
+        centeredSlides={window.innerWidth < 768} // Center on mobile, start on md+
+        breakpoints={{
+          320: { slidesPerView: 1, spaceBetween: 20 },
+          375: { slidesPerView: 1, spaceBetween: 54 },
+          640: { slidesPerView: 2, spaceBetween: 30 },
+          1024: { slidesPerView: 3, spaceBetween: 30 },
+        }}
+      >
+        <SwiperSlide>
+          <CardComponent />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CardComponent />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CardComponent />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CardComponent />
+        </SwiperSlide>
+      </Swiper>
 
       <Button
         title="See Github"

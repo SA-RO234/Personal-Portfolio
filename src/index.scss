@@ -82,3 +82,25 @@
   background-image: radial-gradient(var(--color-primary) 0.5px, #001d21 1.5px);
   background-size: 20px 20px;
 }
+
+// Swiper
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ffd700; /* Change color as needed */
+  background: transparent;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}

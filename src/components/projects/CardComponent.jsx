@@ -4,8 +4,8 @@ import { IoIosInformationCircle } from "react-icons/io";
 import "./CardComponent.scss";
 const CardComponent = () => {
   return (
-    <div className="w-[350px] group cursor-pointer z-0 h-[450px] rounded-3xl relative bg-transparent border-[3px] border-yellow overflow-hidden">
-      <button type="button" className="absolute left-5 top-3"> 
+    <div className="md:w-[350px] w-[100%] group cursor-pointer z-0 h-[450px] rounded-3xl relative bg-transparent border-[3px] border-yellow overflow-hidden">
+      <button type="button" className="absolute left-5 top-3">
         <IoIosInformationCircle className="text-5xl" />
       </button>
       <a

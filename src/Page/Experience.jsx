@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className=" w-full h-auto p-[0px_10px_0px_10px] sm:p-[0px_30px_0px_30px] md:p-[0px_70px_50px_70px]"
+      className=" w-full h-auto p-[0px_10px_0px_10px] sm:p-[0px_30px_0px_30px] lg:p-[0px_70px_50px_70px] md:p-[0px_40px_50px_40px]"
     >
       <Title title={"My Experience"} />
       <div className="w-full sm:pt-10">

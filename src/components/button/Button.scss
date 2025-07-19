@@ -8,11 +8,13 @@
   cursor: pointer;
   position: relative;
   @apply sm:p-[8px];
-  @apply p-[0px];
+  @apply p-0;
   margin-bottom: 20px;
   font-weight: 800;
   transition: all 0.15s ease;
 }
+
+
 
 .button::before,
 .button::after {

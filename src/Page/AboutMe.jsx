@@ -17,7 +17,7 @@ const AboutMe = () => {
       <Title title="About Me" />
       <p className="text-center pb-10 text-md text-main">Who I Am</p>
       <div className="flex w-full justify-between gap-10 flex-wrap">
-        <div className="md:w-[45%] w-full">
+        <div className="md:w-[47%] w-full">
           <p className="pb-3">
             I’m a passionate Web Developer with a strong focus on designing and
             building modern, high-performance websites and applications. With
@@ -41,7 +41,7 @@ const AboutMe = () => {
             "I believe in coding with purpose and designing with empathy."
           </p>
         </div>
-        <div className=" md:p-10 md:w-[45%] w-full">
+        <div className="md:w-[47%] w-full">
           <div className="w-full">
             <h1 className="text-xl font-bold underline">Personal Details</h1>
             <ul className="py-5">

@@ -7,7 +7,6 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import { useEffect } from "react";
 import Education from "./Education";
 import Experience from "./Experience";
 import Testimonials from "./Testimonials";

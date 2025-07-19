@@ -3,8 +3,8 @@ import Button from "../button/Button";
 
 const FormContact = () => {
   return (
-    <form className="flex w-full flex-wrap gap-5 justify-between">
-      <div className="flex w-[45%] flex-col justify-start items-start">
+    <form className="flex w-full flex-col md:flex-row flex-wrap gap-5 justify-between">
+      <div className="flex w-full md:w-[45%] flex-col justify-start items-start">
         <label htmlFor="first">Full Name (required)*</label>
         <input
           type="text"
@@ -14,7 +14,7 @@ const FormContact = () => {
           id="first"
         />
       </div>
-      <div className="flex w-[45%] flex-col justify-start items-start">
+      <div className="flex w-full md:w-[45%] flex-col justify-start items-start">
         <label htmlFor="last">Subject (required)*</label>
         <input
           type="text"
@@ -24,7 +24,7 @@ const FormContact = () => {
           id="last"
         />
       </div>
-      <div className="flex w-[45%] flex-col justify-start items-start">
+      <div className="flex md:w-[45%] w-full flex-col justify-start items-start">
         <label htmlFor="email">Email (required)*</label>
         <input
           type="email"
@@ -34,7 +34,7 @@ const FormContact = () => {
           id="email"
         />
       </div>
-      <div className="flex w-[45%] flex-col justify-start items-start">
+      <div className="flex md:w-[45%] w-full flex-col justify-start items-start">
         <label htmlFor="mobile">Mobile (required)*</label>
         <input
           type="tel"
@@ -54,12 +54,10 @@ const FormContact = () => {
         ></textarea>
       </div>
 
-      <Button title={"Send Message"} className={"after:border after:border-primary before:border before:border-primary"} ></Button>
-      {/* <button className="w-full bg-primary text-greenMain border border-primary hover:bg-transparent hover:text-primary hover py-2 px-4 mt-4">
-        Send Message
-      </button> */}
+     <button className="bg-primary text-black px-3 lg:text-xl lg:py-2 py-3 text-2xl font-bold" type="button">Send Message</button>
     </form>
   );
 };
+
 
 export default FormContact;

@@ -10,10 +10,10 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <div className="bg-greenMain w-full z-[1000] fixed top-0 pb-5 md:pb-10">
-      <div className=" mt-5 top-0 left-[67px]  flex justify-between md:justify-center items-center shadow-md opacity-100 w-[90%] h-[80px] bg-[#001D21] m-auto border md:border-2 border-[#fb8569] md:rounded-[30px]">
-        <nav className="navbar md:block hidden">
-          <ul className="flex justify-around items-center text-[#fb8569]">
+    <div className="w-full z-[1000] fixed top-0  pb-5 md:pb-10">
+      <div className=" mt-5 top-0 left-[67px]   flex justify-between md:justify-between  shadow-md opacity-100 w-[90%] h-[80px] bg-[#001D21] m-auto border md:border-2 border-[#fb8569] md:rounded-[30px]">
+        <nav className="navbar w-full m-auto  lg:block hidden">
+          <ul className="flex w-full h-full justify-between items-center text-[#fb8569]">
             <li>
               <a href="#home">Home</a>
             </li>
@@ -43,9 +43,11 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
+
+
         <nav
           className={clsx(
-            "navbar navbar-Mobile bg-black py-10 h-full fixed left-0 top-0 z-10 md:hidden",
+            "navbar navbar-Mobile bg-black py-10 h-full fixed left-0 top-0 z-10 lg:hidden",
             isOpen
               ? "translate-x-0 duration-300"
               : "translate-x-[-100%] duration-500"
@@ -55,7 +57,7 @@ const Navbar = () => {
             className="float-end pr-7 font-bold"
             onClick={() => setOpen(false)}
           >
-            <img src={Close} alt="" />
+            <img className="w-6" src={Close} alt="" />
           </button>
           <ul className="flex flex-col gap-5 w-full justify-around items-center text-[#fb8569]">
             <li>
@@ -88,7 +90,7 @@ const Navbar = () => {
           </ul>
         </nav>
         <a
-          className="md:hidden flex justify-center group items-center pl-5"
+          className="lg:hidden flex justify-center group items-center pl-5"
           href="#home"
         >
           <img
@@ -99,15 +101,16 @@ const Navbar = () => {
         </a>
         <button
           type="button"
-          className="md:hidden w-[100px] h-[100px] items-center ml-[100px] flex justify-center"
+          className="lg:hidden mt-[-10px] w-[100px] h-[100px] items-center ml-[100px] md:ml-0 flex justify-center"
           onClick={() => setOpen(true)}
         >
           <Lottie
-            className="w-[200px] absolute right-[-50px] h-[200px]"
+            className="w-[200px] absolute right-[-50px] md:right-0 h-[200px]"
             animationData={Menu}
           />
         </button>
       </div>
+    
     </div>
   );
 };
