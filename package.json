@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@rollup/plugin-alias": "^5.1.1",
     "autotyping": "^1.2.6",
     "clsx": "^2.1.1",
     "gsap": "^3.13.0",
