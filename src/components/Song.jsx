@@ -1,18 +1,26 @@
-import React from "react";
-import { IoMdSkipBackward } from "react-icons/io";
+import React, { useState } from "react";
+import Play from "../assets/song/pause.png";
+import Skip from "../assets/song/play-button.png";
+import clsx from "clsx";
+import Lottie from "lottie-react";
+import Signal from "../assets/song/songSignal.json";
 const Song = () => {
+  const [play , setPlay ] = useState(false);
+       
   return (
-    <div className="flex items-center  z-10 font-bold cursor-pointer font-popins  gap-3 rounded-3xl fixed bottom-10 right-10 p-3">
-      <div className="w-full bg-white p-4 rounded-full  h-full flex items-center justify-center ">
-        <img
-          className=""
-          src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1751861082/music-alt_1_wge74w.png"
-          alt=""
-        />
-      </div>
-
-      {/* Song
-      <IoMdSkipBackward /> */}
+    <div className="flex bg-black rounded-3xl px-3 py-3 items-end fixed bottom-10 z-10  right-10">
+    <button
+      onClick={() => setPlay((prev) => !prev)}
+      className="flex w-[35px]  h-[35px] items-center bg-transparent justify-center font-bold cursor-pointer  font-popins gap-3"
+    >
+      <img
+        className={clsx("w-full h-full")}
+        src={play ? Play : Skip}
+        alt=""
+      />
+      
+    </button>
+    {play && <Lottie className="w-[30px]" animationData={Signal} />}
     </div>
   );
 };
