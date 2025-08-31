@@ -1,9 +1,13 @@
-import { useState } from "react";
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "@/routes/AppRoutes";
 import "./App.scss";
 import "./index.scss";
-import Home from "./Page/Home";
-function App() {
-  return <Home />;
-}
+
+const App = () => (
+  <BrowserRouter>
+    <AppRoutes />
+  </BrowserRouter>
+);
 
 export default App;

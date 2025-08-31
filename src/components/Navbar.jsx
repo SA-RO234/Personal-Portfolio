@@ -15,13 +15,13 @@ const Navbar = () => {
         <nav className="navbar w-full m-auto  lg:block hidden">
           <ul className="flex w-full h-full justify-between items-center text-[#fb8569]">
             <li>
-              <a href="#home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#aboutme">About Me</a>
+              <Link href="#aboutme">About Me</Link>
             </li>
             <li>
-              <a href="#education">Education</a>
+              <Link to="/education">Education</Link>
             </li>
             <li>
               <a href="#experience">Experience</a>
