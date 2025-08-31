@@ -10,6 +10,7 @@ import Footer from "./Footer";
 import Education from "./Education";
 import Experience from "./Experience";
 import Testimonials from "./Testimonials";
+import Blog from "./Blog";
 const Home = () => {
   return (
     <div className=" overflow-hidden">
@@ -27,6 +28,7 @@ const Home = () => {
 
       <div className="ThirtPage pb-10 m-0 bg-greenMain text-yellow ">
         <Projects />
+         <Blog/>
         <Testimonials />
       </div>
       <div className="FourthPage w-full pt-20 h-auto text-primary">
