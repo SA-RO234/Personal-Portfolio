@@ -14,7 +14,7 @@ const BlogItems = () => {
             </div>
             <div className="line w-[37%] h-1 bg-yellow"></div>
             <div className="des">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ducimus non facilis atque laborum obcaecati unde? Aspernatur vitae doloremque modi.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ducimus non 
             </div>
             <button className='btn flex items-center' type='button'>Read More <GoArrowUpRight/> </button>
          </div>
