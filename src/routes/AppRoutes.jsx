@@ -8,6 +8,7 @@ import Contact from "@/Page/Contact";
 import Education from "@/Page/Education";
 import Experience from "@/Page/Experience";
 import Testimonials from "@/Page/Testimonials";
+import ProjectDetail from "@/components/projects/ProjectDetail";
 
 const AppRoutes = () => {
   return (
@@ -20,6 +21,7 @@ const AppRoutes = () => {
       <Route path="/education" element={<Education />} />
       <Route path="/experience" element={<Experience />} />
       <Route path="/testimonials" element={<Testimonials />} />
+      <Route path="/projectdetail/:id" element={<ProjectDetail/>} />
     </Routes>
   );
 };

@@ -2,12 +2,13 @@ import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { IoIosInformationCircle } from "react-icons/io";
 import "./CardComponent.scss";
+import { Link } from "react-router-dom";
 const CardComponent = () => {
   return (
     <div className="md:w-[300px] w-[100%] md:min-w-[300px] group cursor-pointer z-0 h-[450px]  relative bg-transparent border-2 border-yellow overflow-hidden">
-      <button type="button" className="absolute left-5 top-3">
+      <Link to={`/projectDetail/${10}`} className="absolute left-5 top-3">
         <IoIosInformationCircle className="text-3xl" />
-      </button>
+      </Link>
       <a
         href="#"
         className="link absolute top-3 right-3 flex items-center text-3xl font-md"
