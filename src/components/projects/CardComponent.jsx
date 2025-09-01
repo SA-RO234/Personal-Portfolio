@@ -4,23 +4,23 @@ import { IoIosInformationCircle } from "react-icons/io";
 import "./CardComponent.scss";
 const CardComponent = () => {
   return (
-    <div className="md:w-[350px] w-[100%] group cursor-pointer z-0 h-[450px] rounded-3xl relative bg-transparent border-[3px] border-yellow overflow-hidden">
+    <div className="md:w-[300px] w-[100%] md:min-w-[300px] group cursor-pointer z-0 h-[450px]  relative bg-transparent border-2 border-yellow overflow-hidden">
       <button type="button" className="absolute left-5 top-3">
-        <IoIosInformationCircle className="text-5xl" />
+        <IoIosInformationCircle className="text-3xl" />
       </button>
       <a
         href="#"
-        className="link absolute top-3 right-3 flex items-center text-4xl font-md"
+        className="link absolute top-3 right-3 flex items-center text-3xl font-md"
       >
         [
-        <MdArrowOutward className="group-hover:-translate-y-1 duration-500" />]
+        <MdArrowOutward className="group-hover:-translate-y-1 group-hover:translate-x-1 duration-500" />]
       </a>
       <img
         className="w-full absolute   z-[-1] h-full object-cover"
         src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1746026536/3e9cd927-2fd7-40b5-9baf-855e43d35a79.png"
         alt=""
       />
-      <div className="layer h-auto  w-[95%] left-[9px] absolute bottom-[9px] rounded-3xl bg-greenMain group-hover:bottom-5 duration-500 flex flex-wrap justify-between items-center p-5">
+      <div className="layer h-auto  w-[95%] left-[9px] absolute bottom-[9px]  bg-greenMain group-hover:bottom-5 duration-500 flex flex-wrap justify-between items-center p-5">
         <ul className="flex gap-2  ">
           <li>
             <img

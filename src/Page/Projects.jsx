@@ -15,7 +15,7 @@ function Projects() {
   return (
     <div
       id="project"
-      className="project flex flex-col justify-center items-center gap-5 w-[90%] mx-auto h-auto"
+      className="project flex flex-col  justify-center items-center gap-5 w-[90%] mx-auto h-auto"
     >
       <Title title={"My Project"} />
       <Swiper
@@ -26,10 +26,10 @@ function Projects() {
           320: { slidesPerView: 1, spaceBetween: 20 },
           375: { slidesPerView: 1, spaceBetween: 54 },
           640: { slidesPerView: 2, spaceBetween: 30 },
-          1024: { slidesPerView: 3, spaceBetween: 30 },
+          1024: { slidesPerView: 4, spaceBetween: 30 },
         }}
       >
-        <SwiperSlide>
+        <SwiperSlide className=" mb-10">
           <CardComponent />
         </SwiperSlide>
         <SwiperSlide>
